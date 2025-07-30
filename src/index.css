@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+.btnBlue {
+  @apply bg-blue-500 hover:bg-blue-600 duration-300 transition-all;
+}
+
+.btnGreen {
+  @apply bg-green-500 hover:bg-green-600 duration-300 transition-all;
+}
+.btnBlack {
+  @apply bg-black/80 hover:bg-black text-white duration-300 transition-all;
+}
+
+/* Custom Scrollbar Code  */
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 8px; /* width of the vertical scrollbar */
+  height: 8px; /* height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Scroll thumb color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Hover state */
+}
