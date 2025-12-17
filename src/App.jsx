@@ -1,14 +1,16 @@
-import AddTask from "./components/AddTask";
-import TaskList from "./components/TaskList";
+import AddTodo from './components/AddTodo'
+import Todos from './components/Todos'
 
 function App() {
-  return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-900 flex-col">
-      <h1 className="text-4xl font-bold text-white">Task Manager App</h1>
-      <AddTask />
-      <TaskList />
+  
+  return (  
+    <div className='bg-gray-950 min-h-screen '>
+      <div className='p-8 container mx-auto'>
+      <AddTodo />
+      <Todos />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
